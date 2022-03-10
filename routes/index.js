@@ -28,8 +28,6 @@ connection.query(query, (err, results) => {
 router.get('/actor/:id', function(req, res, next) {
   let actorId = parseInt(req.params.id);
   console.log(actorId);
-  console.log('hi');
-
 
   let idQuery = `SELECT * FROM actor WHERE actor_id=${actorId}`
 
@@ -45,7 +43,4 @@ router.get('/actor/:id', function(req, res, next) {
     console.log(result)
   })
 });
-module.exports = router;
-
-
 module.exports = router;
